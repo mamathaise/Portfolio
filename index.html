@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO & Social Meta Tags -->
+  <title>Mamatha B M | Full-Stack Software Engineer</title>
+  <meta name="description"
+    content="Portfolio of Mamatha B M, a Software Engineer specializing in modern full-stack web development, scalable cloud architecture, and intuitive user experiences.">
+  <meta name="keywords"
+    content="Mamatha B M, Software Engineer, Full-Stack Developer, Portfolio, Web Development, JavaScript, TypeScript, React, Node.js">
+  <meta name="author" content="Mamatha B M">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mamatha B M | Full-Stack Software Engineer">
+  <meta property="og:description"
+    content="Explore projects, technical skills, career timeline, and contact information.">
+
+  <!-- Google Fonts: Pixel Art & Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Accessibility: Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ==========================================================================
+       VERTICAL NAVIGATION BAR (LEFT SIDEBAR)
+       Accessible, responsive, pixel art console navigation with 8 section links:
+       Home, About Me, Skills, Timeline, Projects, Testimonials, Chat, Contact
+       ========================================================================== -->
+  <aside id="vertical-sidebar" class="pixel-sidebar" aria-label="Vertical Navigation Bar">
+    <div class="sidebar-inner">
+      <!-- Sidebar Brand & Profile -->
+      <div class="sidebar-header">
+        <a href="#hero" class="sidebar-brand" aria-label="Mamatha B M Portfolio Home">
+          <span class="sidebar-avatar-icon" aria-hidden="true">👾</span>
+          <div class="sidebar-brand-info">
+            <span class="sidebar-brand-name">MAMATHA</span>
+            <span class="sidebar-brand-role">&lt;DEV.CONSOLE/&gt;</span>
+          </div>
+        </a>
+        <div class="sidebar-player-status" title="Status: Online & Ready for work">
+          <span class="status-indicator-dot" aria-hidden="true"></span>
+          <span>ONLINE</span>
+        </div>
+      </div>
+
+      <!-- Navigation Links List (8 Links Required) -->
+      <nav id="sidebar-nav-container" class="sidebar-nav" aria-label="Vertical Section Links">
+        <ul class="sidebar-menu">
+          <li class="sidebar-menu-item">
+            <a href="#hero" class="sidebar-link active" data-section="hero" aria-current="page">
+              <span class="link-cursor" aria-hidden="true">►</span>
+              <span class="link-icon" aria-hidden="true">🏠</span>
+              <span class="link-text">Home</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#about" class="sidebar-link" data-section="about">
+              <span class="link-cursor" aria-hidden="true">►</span>
+              <span class="link-icon" aria-hidden="true">👤</span>
+              <span class="link-text">About Me</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#skills" class="sidebar-link" data-section="skills">
+              <span class="link-cursor" aria-hidden="true">►</span>
+              <span class="link-icon" aria-hidden="true">⚡</span>
+              <span class="link-text">Skills</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#timeline" class="sidebar-link" data-section="timeline">
+              <span class="link-cursor" aria-hidden="true">►</span>
+              <span class="link-icon" aria-hidden="true">📜</span>
+              <span class="link-text">Timeline</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#projects" class="sidebar-link" data-section="projects">
+              <span class="link-cursor" aria-hidden="true">►</span>
+              <span class="link-icon" aria-hidden="true">🎮</span>
+              <span class="link-text">Projects</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#testimonials" class="sidebar-link" data-section="testimonials">
+              <span class="link-cursor" aria-hidden="true">►</span>
+              <span class="link-icon" aria-hidden="true">💬</span>
+              <span class="link-text">Testimonials</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#chat" class="sidebar-link" data-section="chat">
+              <span class="link-cursor" aria-hidden="true">►</span>
+              <span class="link-icon" aria-hidden="true">👾</span>
+              <span class="link-text">Chat</span>
+              <span class="sidebar-badge-pill" aria-label="Interactive AI terminal">LIVE</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#contact" class="sidebar-link" data-section="contact">
+              <span class="link-cursor" aria-hidden="true">►</span>
+              <span class="link-icon" aria-hidden="true">✉</span>
+              <span class="link-text">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Footer (Theme Mode & System Status) -->
+      <div class="sidebar-footer">
+        <button id="sidebar-theme-toggle" class="sidebar-theme-btn" type="button" aria-label="Toggle Night Mode">
+          <span class="sidebar-theme-icon" aria-hidden="true">🌓</span>
+          <span class="sidebar-theme-text">THEME TOGGLE</span>
+        </button>
+        <div class="sidebar-stats-mini">
+          <span class="mini-hud-tag">LVL 99 ARCHITECT</span>
+          <span class="mini-hud-sub">8-BIT CONSOLE v2.0</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Mobile Backdrop Overlay -->
+  <div id="sidebar-backdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       HEADER & MOBILE NAVIGATION BAR
+       Includes brand logo, mobile toggle, and the Night Mode Toggle placeholder
+       ========================================================================== -->
+  <header id="site-header" class="site-header">
+    <div class="container header-container">
+      <!-- Mobile Sidebar Toggle Button -->
+      <button id="sidebar-toggle-btn" class="sidebar-toggle-btn" aria-label="Toggle Left Navigation Menu"
+        aria-expanded="false" aria-controls="vertical-sidebar" type="button">
+        <span class="pixel-hamburger-bar"></span>
+        <span class="pixel-hamburger-bar"></span>
+        <span class="pixel-hamburger-bar"></span>
+      </button>
+
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Portfolio Home">
+        <span class="logo-symbol">&lt;</span><span class="logo-text">Dev</span><span
+          class="logo-accent">.Portfolio</span><span class="logo-symbol">/&gt;</span>
+      </a>
+
+      <!-- Action Items & Night Mode Toggle -->
+      <div class="header-actions">
+        <!-- Night Mode / Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Night Mode" title="Toggle color theme"
+          type="button">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+          <span class="visually-hidden">Toggle theme</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================== -->
+  <main id="main-content">
+
+    <!-- ========================================================================
+         SECTION: HERO (PIXEL ART STYLE DESIGN)
+         Features retro 8-bit styling, provided background image, welcome title,
+         brief tagline, player HUD stats, and theme detection toggle
+         ======================================================================== -->
+    <section id="hero" class="section hero-section pixel-hero" aria-label="Hero Section">
+      <!-- Background Image Layer with Pixel Grid & CRT Scanline Styling -->
+      <div class="pixel-hero-bg-layer" aria-hidden="true">
+        <div class="pixel-bg-image"></div>
+        <div class="pixel-scanlines"></div>
+        <div class="pixel-grid-pattern"></div>
+        <div class="pixel-vignette"></div>
+      </div>
+
+      <div class="container hero-container pixel-hero-container">
+        <!-- Hero Content / Retro RPG Dialogue Box -->
+        <div class="hero-content pixel-hero-content">
+          <!-- Pixel HUD Bar with Stats & Theme Detection Indicator -->
+          <div class="pixel-hud-bar">
+            <div class="pixel-hud-item">
+              <span class="pixel-heart" aria-hidden="true">♥</span>
+              <span class="pixel-hud-label">HP</span>
+              <div class="pixel-bar-track">
+                <div class="pixel-bar-fill hp-bar"></div>
+              </div>
+              <span class="pixel-hud-num">100%</span>
+            </div>
+
+            <div class="pixel-hud-item">
+              <span class="pixel-star" aria-hidden="true">★</span>
+              <span class="pixel-hud-label">EXP</span>
+              <span class="pixel-hud-val">LVL 99</span>
+            </div>
+
+            <div class="pixel-status-badge">
+              <span class="pixel-blinker" aria-hidden="true">■</span>
+              <span>READY FOR QUESTS</span>
+            </div>
+
+            <!-- Pixel Theme Indicator / Quick Toggle -->
+            <button id="pixel-theme-switch" class="pixel-theme-toggle" type="button" aria-label="Toggle Night Mode via Media Query">
+              <span class="pixel-theme-icon">⚡</span>
+              <span class="pixel-theme-text" id="pixel-theme-label">THEME: AUTO (MEDIA QUERY)</span>
+            </button>
+          </div>
+
+          <!-- Welcome Message & Title Frame -->
+          <div class="pixel-welcome-box">
+            <!-- Stepped Pixel Corners -->
+            <div class="pixel-corner tl" aria-hidden="true"></div>
+            <div class="pixel-corner tr" aria-hidden="true"></div>
+            <div class="pixel-corner bl" aria-hidden="true"></div>
+            <div class="pixel-corner br" aria-hidden="true"></div>
+
+            <p class="pixel-welcome-caption">
+              <span class="pixel-icon-coin" aria-hidden="true">🪙</span> WELCOME, VISITOR / PLAYER 1!
+            </p>
+
+            <h1 class="hero-title pixel-title">
+              HELLO WORLD, I'M<br>
+              <span class="pixel-name-glow">MAMATHA B M</span>
+            </h1>
+
+            <div class="pixel-role-tag">
+              <span class="pixel-arrow" aria-hidden="true">►</span> SOFTWARE ENGINEER &amp; FULL-STACK ARCHITECT
+            </div>
+
+            <!-- Brief Tagline -->
+            <p class="hero-description pixel-tagline">
+              Crafting resilient full-stack systems and pixel-perfect digital experiences. Leveling up scalable cloud architectures one commit at a time.
+            </p>
+
+            <!-- 8-Bit Interactive Pixel Action Buttons -->
+            <div class="hero-cta-group pixel-cta-group">
+              <a href="#projects" class="pixel-btn pixel-btn-primary">
+                <span class="pixel-btn-icon">►</span>
+                <span>VIEW PROJECTS</span>
+              </a>
+              <a href="RESUME.pdf" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-secondary">
+                <span class="pixel-btn-icon">💾</span>
+                <span>DOWNLOAD RESUME</span>
+              </a>
+              <a href="#contact" class="pixel-btn pixel-btn-ghost">
+                <span class="pixel-btn-icon">✉</span>
+                <span>CONTACT ME</span>
+              </a>
+            </div>
+
+            <!-- Pixel Quest Log / Retro System Prompt -->
+            <div class="pixel-quest-log">
+              <span class="pixel-prompt" aria-hidden="true">&gt;</span>
+              <span class="pixel-typing-text">SYSTEM INITIALIZED. CURRENT MISSION: BUILD SCALABLE SOFTWARE.</span>
+              <span class="pixel-cursor" aria-hidden="true">_</span>
+            </div>
+          </div>
+
+          <!-- Hero Quick Retro Stats Grid -->
+          <div class="pixel-meta-list">
+            <div class="pixel-meta-card">
+              <div class="pixel-meta-num">5+</div>
+              <div class="pixel-meta-desc">YRS EXP</div>
+            </div>
+            <div class="pixel-meta-card">
+              <div class="pixel-meta-num">25+</div>
+              <div class="pixel-meta-desc">SHIPPED</div>
+            </div>
+            <div class="pixel-meta-card">
+              <div class="pixel-meta-num">99.9%</div>
+              <div class="pixel-meta-desc">UPTIME</div>
+            </div>
+            <div class="pixel-meta-card">
+              <div class="pixel-meta-num">∞</div>
+              <div class="pixel-meta-desc">PASSION</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Pixel Art Character Frame for Provided Image -->
+        <div class="hero-visual pixel-hero-visual">
+          <div class="pixel-frame-wrapper">
+            <!-- 8-bit Frame Border and Header -->
+            <div class="pixel-frame">
+              <div class="pixel-frame-header">
+                <span class="pixel-frame-dot red" aria-hidden="true"></span>
+                <span class="pixel-frame-dot yellow" aria-hidden="true"></span>
+                <span class="pixel-frame-dot green" aria-hidden="true"></span>
+                <span class="pixel-frame-title">MAMATHA_AVATAR.PNG</span>
+              </div>
+              <div class="pixel-image-container">
+                <img src="PROFESSIONAL PICTURE.jpeg" alt="Professional portrait of Mamatha B M" class="pixel-avatar-img" loading="eager">
+                <div class="pixel-crt-scanline" aria-hidden="true"></div>
+              </div>
+              <div class="pixel-frame-footer">
+                <span class="pixel-tag-badge">CLASS: ARCHITECT</span>
+                <span class="pixel-tag-badge">TYPE: FULL-STACK</span>
+              </div>
+            </div>
+
+            <!-- Floating 8-Bit Badges -->
+            <div class="pixel-floating-badge badge-top">
+              <span class="badge-pixel-icon" aria-hidden="true">⚡</span>
+              <span>CLEAN ARCHITECTURE</span>
+            </div>
+            <div class="pixel-floating-badge badge-bottom">
+              <span class="badge-pixel-icon" aria-hidden="true">☁</span>
+              <span>CLOUD &amp; DEVOPS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION: HERO -->
+
+    <!-- ========================================================================
+         SECTION: ABOUT ME
+         Clean, minimalistic design with profile image, bio, career highlights,
+         and personal interests
+         ======================================================================== -->
+    <section id="about" class="section about-section" aria-label="About Me">
+      <div class="container">
+        <!-- Minimalist Section Header -->
+        <div class="section-header">
+          <span class="section-subtitle">02 // PROFILE &amp; BACKGROUND</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-minimal-grid">
+          <!-- Left Column: Clean Profile Image & Key Highlights Card -->
+          <div class="about-image-column">
+            <!-- Profile Image Card -->
+            <div class="about-image-card">
+              <div class="about-image-wrapper">
+                <img src="PROFESSIONAL PICTURE.jpeg" alt="Profile portrait of Mamatha B M, Full-Stack Software Engineer" class="about-profile-image" loading="lazy">
+                <div class="about-image-badge">
+                  <span class="status-live-dot" aria-hidden="true"></span>
+                  <span>Available for Full-Time Roles</span>
+                </div>
+              </div>
+              <div class="about-image-caption">
+                <h3 class="about-profile-name">Mamatha B M</h3>
+                <p class="about-profile-role">Full-Stack Software Engineer</p>
+                <p class="about-profile-loc">📍 San Francisco, CA • Open to Remote &amp; Hybrid</p>
+              </div>
+            </div>
+
+            <!-- Minimalist Quick Facts Card -->
+            <div class="about-facts-card">
+              <div class="fact-row">
+                <span class="fact-label">Experience</span>
+                <span class="fact-value">5+ Years Building Production Systems</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label">Specialization</span>
+                <span class="fact-value">Full-Stack Web, Cloud APIs, Microservices</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label">Primary Stack</span>
+                <span class="fact-value">TypeScript, React, Node.js, Python, PostgreSQL</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label">Education</span>
+                <span class="fact-value">B.S. in Computer Science (Honors)</span>
+              </div>
+              <div class="fact-action">
+                <a href="RESUME.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary full-width">
+                  <span>Download Curriculum Vitae</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Narrative Bio, Career Highlights, and Personal Interests -->
+          <div class="about-content-column">
+            <!-- Short Bio -->
+            <div class="about-bio-card">
+              <h3 class="about-heading">Transforming complex system architectures into intuitive, resilient digital realities.</h3>
+              <p class="about-paragraph">
+                I am a passionate, results-driven software engineer who thrives at the intersection of robust backend infrastructure, thoughtful system design, and high-performance user interfaces. Over the last five years, I have architected and scaled applications from inception to millions of requests, championing clean code patterns and automated reliability.
+              </p>
+              <p class="about-paragraph">
+                Whether diagnosing query bottlenecks, building event-driven microservices with Kafka and AWS, or crafting reactive frontends with Next.js and TypeScript, I prioritize maintainability, developer ergonomics, and measurable user value.
+              </p>
+            </div>
+
+            <!-- Career Highlights -->
+            <div class="about-block">
+              <h4 class="about-subheading">
+                <span class="subheading-accent">⚡</span> Career Highlights &amp; Impact
+              </h4>
+              <div class="highlights-grid">
+                <div class="highlight-item">
+                  <div class="highlight-bullet">01</div>
+                  <div>
+                    <h5 class="highlight-title">Microservices Migration &amp; AWS Orchestration</h5>
+                    <p class="highlight-desc">Spearheaded the decoupling of a monolithic codebase into containerized Docker services on AWS, dropping p95 latency by 42%.</p>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <div class="highlight-bullet">02</div>
+                  <div>
+                    <h5 class="highlight-title">High-Throughput Event Streaming</h5>
+                    <p class="highlight-desc">Architected Kafka messaging pipelines processing over 15M+ daily event payloads with 99.99% data pipeline delivery integrity.</p>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <div class="highlight-bullet">03</div>
+                  <div>
+                    <h5 class="highlight-title">Full-Stack Design Systems &amp; Testing</h5>
+                    <p class="highlight-desc">Authored end-to-end component libraries with TypeScript and Jest test suites exceeding 92% coverage, speeding up sprint velocity across cross-functional teams.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Personal Interests -->
+            <div class="about-block">
+              <h4 class="about-subheading">
+                <span class="subheading-accent">🌱</span> Beyond the Code // Personal Interests
+              </h4>
+              <p class="interests-intro">
+                Continuous learning and curiosity extend outside my terminal. Some passions that energize my creative problem-solving:
+              </p>
+              <div class="interests-grid">
+                <div class="interest-pill">
+                  <span class="interest-icon" aria-hidden="true">🎮</span>
+                  <div>
+                    <span class="interest-name">Retro Gaming &amp; Pixel Art</span>
+                    <span class="interest-detail">Studying classic 8-bit game mechanics and indie dev jams.</span>
+                  </div>
+                </div>
+                <div class="interest-pill">
+                  <span class="interest-icon" aria-hidden="true">🤖</span>
+                  <div>
+                    <span class="interest-name">Agentic AI &amp; LLM Tooling</span>
+                    <span class="interest-detail">Experimenting with agent frameworks, RAG workflows, and developer automations.</span>
+                  </div>
+                </div>
+                <div class="interest-pill">
+                  <span class="interest-icon" aria-hidden="true">♟️</span>
+                  <div>
+                    <span class="interest-name">Chess &amp; Strategic Problem Solving</span>
+                    <span class="interest-detail">Sharpening foresight, tactical calculation, and pattern recognition.</span>
+                  </div>
+                </div>
+                <div class="interest-pill">
+                  <span class="interest-icon" aria-hidden="true">☕</span>
+                  <div>
+                    <span class="interest-name">Specialty Pour-Over &amp; Hiking</span>
+                    <span class="interest-detail">Exploring coastal trails and perfecting single-origin coffee brewing.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Action Links -->
+            <div class="about-cta-row">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore Featured Projects</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+              <a href="#chat" class="btn btn-secondary">
+                <span>Talk with My AI Bot</span>
+                <span class="btn-pixel-icon" aria-hidden="true">👾</span>
+              </a>
+              <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION: ABOUT --></div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION: ABOUT -->
+
+    <!-- ========================================================================
+         SECTION: SKILLS
+         Categorized technical skills, frameworks, tools, and languages
+         ======================================================================== -->
+    <section id="skills" class="section skills-section" aria-label="Skills & Expertise">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-subtitle">Technical Stack</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category: Frontend -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">💻</div>
+              <h3 class="category-title">Frontend Engineering</h3>
+            </div>
+            <p class="category-description">Creating reactive, accessible, and high-performance interfaces.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">HTML5 / Semantic Web</span>
+              <span class="skill-tag">Modern CSS / SCSS</span>
+              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">Web Accessibility (a11y)</span>
+            </div>
+          </div>
+
+          <!-- Skill Category: Backend & API -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">⚙️</div>
+              <h3 class="category-title">Backend & APIs</h3>
+            </div>
+            <p class="category-description">Architecting dependable server-side services and data layers.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express / NestJS</span>
+              <span class="skill-tag">Python (FastAPI / Django)</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">GraphQL</span>
+              <span class="skill-tag">Microservices</span>
+              <span class="skill-tag">Authentication (OAuth / JWT)</span>
+              <span class="skill-tag">WebSockets</span>
+            </div>
+          </div>
+
+          <!-- Skill Category: Databases & Cloud -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">🗄️</div>
+              <h3 class="category-title">Databases & Cloud</h3>
+            </div>
+            <p class="category-description">Ensuring data integrity, caching, and scalable deployments.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Redis (Caching)</span>
+              <span class="skill-tag">Amazon Web Services (AWS)</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Kubernetes</span>
+              <span class="skill-tag">Serverless / Lambda</span>
+              <span class="skill-tag">Prisma / TypeORM</span>
+            </div>
+          </div>
+
+          <!-- Skill Category: DevOps & Tooling -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">🛠️</div>
+              <h3 class="category-title">DevOps & Best Practices</h3>
+            </div>
+            <p class="category-description">Automating testing, continuous deployment, and codebase quality.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Git / GitHub Actions</span>
+              <span class="skill-tag">CI/CD Pipelines</span>
+              <span class="skill-tag">Unit & Integration Testing (Jest)</span>
+              <span class="skill-tag">Linux / Bash Scripting</span>
+              <span class="skill-tag">System Design</span>
+              <span class="skill-tag">Agile / Scrum</span>
+              <span class="skill-tag">Monitoring (Datadog / Prometheus)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION: SKILLS -->
+
+    <!-- ========================================================================
+         SECTION: TIMELINE (EXPERIENCE & EDUCATION)
+         Chronological progression of work history, leadership, and academics
+         ======================================================================== -->
+    <section id="timeline" class="section timeline-section" aria-label="Career Timeline">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-subtitle">Career Path</span>
+          <h2 class="section-title">Experience & Timeline</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <!-- Timeline Item 1: Senior Role -->
+          <article class="timeline-item" data-role="experience">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">2023 — Present</span>
+                <span class="timeline-badge badge-exp">Full-Time</span>
+              </div>
+              <h3 class="timeline-role">Senior Software Engineer</h3>
+              <h4 class="timeline-company">Tech Innovators Corp • San Francisco, CA (Remote)</h4>
+              <p class="timeline-description">
+                Leading the core backend architecture and cloud microservices team. Spearheaded the migration of legacy
+                monolith to containerized microservices on AWS, reducing page latency by 42%.
+              </p>
+              <ul class="timeline-achievements">
+                <li>Designed event-driven Kafka pipelines handling 15M+ daily events.</li>
+                <li>Mentored junior engineers and instituted code review standards.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="mini-tag">TypeScript</span>
+                <span class="mini-tag">Node.js</span>
+                <span class="mini-tag">AWS</span>
+                <span class="mini-tag">Docker</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 2: Mid-level Role -->
+          <article class="timeline-item" data-role="experience">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">2021 — 2023</span>
+                <span class="timeline-badge badge-exp">Full-Time</span>
+              </div>
+              <h3 class="timeline-role">Full-Stack Software Engineer</h3>
+              <h4 class="timeline-company">NextWave Solutions • New York, NY</h4>
+              <p class="timeline-description">
+                Engineered full-stack features for client-facing analytics dashboards using React, Node.js, and
+                PostgreSQL. Improved database query indexing, cutting query execution times by 50%.
+              </p>
+              <ul class="timeline-achievements">
+                <li>Built real-time collaboration canvas with WebSockets and Redis.</li>
+                <li>Authored automated end-to-end testing suites with 92% coverage.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="mini-tag">React</span>
+                <span class="mini-tag">Express</span>
+                <span class="mini-tag">PostgreSQL</span>
+                <span class="mini-tag">Redis</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 3: Associate / Junior Role -->
+          <article class="timeline-item" data-role="experience">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">2019 — 2021</span>
+                <span class="timeline-badge badge-exp">Full-Time</span>
+              </div>
+              <h3 class="timeline-role">Junior Software Engineer</h3>
+              <h4 class="timeline-company">Aura Digital Labs • Boston, MA</h4>
+              <p class="timeline-description">
+                Contributed to frontend feature development, REST API integrations, and bug resolutions for
+                cross-platform e-commerce solutions.
+              </p>
+              <div class="timeline-tags">
+                <span class="mini-tag">JavaScript</span>
+                <span class="mini-tag">HTML5/CSS3</span>
+                <span class="mini-tag">REST APIs</span>
+                <span class="mini-tag">Git</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 4: Education -->
+          <article class="timeline-item" data-role="education">
+            <div class="timeline-marker education-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">2015 — 2019</span>
+                <span class="timeline-badge badge-edu">Education</span>
+              </div>
+              <h3 class="timeline-role">Bachelor of Science in Computer Science</h3>
+              <h4 class="timeline-company">University Department of Computer Science & Engineering</h4>
+              <p class="timeline-description">
+                Graduated with Honors. Coursework focused on Algorithms, Data Structures, Distributed Computing,
+                Database Systems, and Software Engineering Principles.
+              </p>
+              <div class="timeline-tags">
+                <span class="mini-tag">Computer Science</span>
+                <span class="mini-tag">Data Structures</span>
+                <span class="mini-tag">Distributed Systems</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION: TIMELINE -->
+
+    <!-- ========================================================================
+         SECTION: PROJECTS
+         Showcase of software engineering projects, live demos, and code repos
+         ======================================================================== -->
+    <section id="projects" class="section projects-section" aria-label="Featured Projects">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-subtitle">Featured Work</span>
+          <h2 class="section-title">Projects & Case Studies</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project Card 1 -->
+          <article class="project-card">
+            <div class="project-banner banner-1">
+              <div class="project-banner-overlay"></div>
+              <span class="project-badge">Full-Stack SaaS</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">CloudScale: Cloud Monitoring & Telemetry Engine</h3>
+              <p class="project-desc">
+                High-throughput distributed monitoring dashboard providing real-time alerts, health metrics, and
+                automated cluster scaling for microservices architectures.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Go</span>
+                <span class="tech-pill">Kafka</span>
+                <span class="tech-pill">Docker</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link"
+                  aria-label="Source code on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                  <span>Code</span>
+                </a>
+                <a href="#projects" class="project-link link-primary" aria-label="Live Demo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <article class="project-card">
+            <div class="project-banner banner-2">
+              <div class="project-banner-overlay"></div>
+              <span class="project-badge">DevOps & CLI</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">DevFlow: Automated Pipeline Orchestrator</h3>
+              <p class="project-desc">
+                An extensible command-line developer utility and automated testing runner with built-in container
+                orchestration and webhook integrations.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">Docker Engine</span>
+                <span class="tech-pill">GitHub Actions</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link"
+                  aria-label="Source code on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                  <span>Code</span>
+                </a>
+                <a href="#projects" class="project-link link-primary" aria-label="Live Documentation">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span>Docs</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3 -->
+          <article class="project-card">
+            <div class="project-banner banner-3">
+              <div class="project-banner-overlay"></div>
+              <span class="project-badge">AI / ML Integration</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">SmartQuery: Natural Language DB Query Assistant</h3>
+              <p class="project-desc">
+                AI-driven analytics portal translating conversational natural language queries into optimized, secure
+                SQL queries with explainability plans.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">LLM API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link"
+                  aria-label="Source code on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                  <span>Code</span>
+                </a>
+                <a href="#projects" class="project-link link-primary" aria-label="Live Demo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION: PROJECTS -->
+
+    <!-- ========================================================================
+         SECTION: TESTIMONIALS
+         Endorsements from team leads, engineering managers, and collaborators
+         ======================================================================== -->
+    <section id="testimonials" class="section testimonials-section" aria-label="Client & Peer Testimonials">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-subtitle">Endorsements</span>
+          <h2 class="section-title">Peer &amp; Client Testimonials</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <article class="testimonial-card pixel-testimonial-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Mamatha is an outstanding full-stack engineer who blends clean architecture with remarkable execution speed. She led our cloud migration with precision and maintained zero downtime."
+            </p>
+            <div class="testimonial-author">
+              <span class="author-avatar" aria-hidden="true">🧑‍💻</span>
+              <div>
+                <h3 class="author-name">David Vance</h3>
+                <p class="author-title">Principal Architect • CloudScale Systems</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="testimonial-card pixel-testimonial-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Working with Mamatha was a delight. Her attention to detail in API design, database indexing, and pixel-perfect frontends elevated our entire developer ecosystem."
+            </p>
+            <div class="testimonial-author">
+              <span class="author-avatar" aria-hidden="true">👩‍💼</span>
+              <div>
+                <h3 class="author-name">Elena Rostova</h3>
+                <p class="author-title">VP of Engineering • NextWave Solutions</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial-card pixel-testimonial-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "One of the rare engineers who genuinely cares about both system scalability and user-centric design. Her work on automated CI/CD pipelines saved our team dozens of hours weekly."
+            </p>
+            <div class="testimonial-author">
+              <span class="author-avatar" aria-hidden="true">👨‍💻</span>
+              <div>
+                <h3 class="author-name">Marcus Chen</h3>
+                <p class="author-title">Senior Product Lead • Aura Digital</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION: TESTIMONIALS -->
+
+    <!-- ========================================================================
+         SECTION: CHAT
+         Interactive 8-bit AI Console / Visitor Terminal
+         ======================================================================== -->
+    <section id="chat" class="section chat-section" aria-label="Interactive Terminal Chat">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-subtitle">Live Console</span>
+          <h2 class="section-title">Interactive Terminal &amp; Chat</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="chat-terminal-wrapper">
+          <div class="pixel-terminal">
+            <!-- Terminal Header -->
+            <div class="terminal-header">
+              <span class="terminal-dot red" aria-hidden="true"></span>
+              <span class="terminal-dot yellow" aria-hidden="true"></span>
+              <span class="terminal-dot green" aria-hidden="true"></span>
+              <span class="terminal-title">MAMATHA_AI_BOT.EXE [V1.0 - ONLINE]</span>
+            </div>
+
+            <!-- Terminal Output Window -->
+            <div id="terminal-messages" class="terminal-messages" role="log" aria-live="polite">
+              <div class="terminal-msg bot-msg">
+                <span class="msg-prefix">&gt; SYSTEM:</span>
+                <span class="msg-content">Welcome to Mamatha's Interactive Terminal! What would you like to explore today?</span>
+              </div>
+              <div class="terminal-msg bot-msg">
+                <span class="msg-prefix">&gt; BOT:</span>
+                <span class="msg-content">You can select a quick quest or type a custom question below.</span>
+              </div>
+            </div>
+
+            <!-- Suggested Quick Chips -->
+            <div class="terminal-chips" aria-label="Quick questions">
+              <button type="button" class="terminal-chip-btn" data-query="What is Mamatha's tech stack?">
+                💻 Tech Stack
+              </button>
+              <button type="button" class="terminal-chip-btn" data-query="Are you available for full-time roles?">
+                💼 Availability
+              </button>
+              <button type="button" class="terminal-chip-btn" data-query="Tell me about your featured project.">
+                🚀 Featured Project
+              </button>
+              <button type="button" class="terminal-chip-btn" data-query="Where can I download your resume?">
+                📄 Download Resume
+              </button>
+            </div>
+
+            <!-- Terminal Input Form -->
+            <form id="terminal-chat-form" class="terminal-input-form" action="#" method="POST">
+              <span class="input-prompt" aria-hidden="true">&gt;</span>
+              <input type="text" id="terminal-input" class="terminal-input" placeholder="Type a command or ask a question..." autocomplete="off" required>
+              <button type="submit" class="pixel-btn pixel-btn-primary terminal-submit-btn">
+                <span>► SEND</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION: CHAT -->
+
+    <!-- ========================================================================
+         SECTION: CONTACT
+         Direct contact channels, availability, and message form
+         ======================================================================== -->
+    <section id="contact" class="section contact-section" aria-label="Contact Section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-subtitle">Get in Touch</span>
+          <h2 class="section-title">Let's Build Something Together</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Info Column -->
+          <div class="contact-info">
+            <h3 class="contact-subtitle">Have a project in mind or looking for an engineer?</h3>
+            <p class="contact-text">
+              I am always excited to discuss software engineering challenges, open-source projects, and new full-time
+              career opportunities. Feel free to send a message or connect directly.
+            </p>
+
+            <div class="contact-methods">
+              <a href="mailto:engineer@example.com" class="contact-card">
+                <div class="contact-icon">📧</div>
+                <div>
+                  <div class="contact-label">Email</div>
+                  <div class="contact-detail">engineer@example.com</div>
+                </div>
+              </a>
+
+              <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <div class="contact-label">Location</div>
+                  <div class="contact-detail">San Francisco, CA / Remote</div>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">📄</div>
+                <div>
+                  <div class="contact-label">Curriculum Vitae</div>
+                  <div class="contact-detail"><a href="RESUME.pdf" target="_blank" class="text-link">Download PDF
+                      Resume</a></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links-wrap">
+              <h4 class="social-heading">Connect Online</h4>
+              <div class="social-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                  aria-label="GitHub Profile">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  </svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                  aria-label="LinkedIn Profile">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+                </a>
+                <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                  aria-label="X / Twitter Profile">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Placeholder -->
+          <div class="contact-form-container">
+            <form id="contact-form" class="glass-card contact-form" action="#" method="POST">
+              <h3 class="form-title">Send a Message</h3>
+
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Smith"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="alex@example.com"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" name="subject" class="form-input"
+                  placeholder="Project inquiry / Opportunity" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" name="message" class="form-textarea" rows="4"
+                  placeholder="Tell me about your project, team, or opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary full-width">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION: CONTACT -->
+
+  </main>
+  <!-- END MAIN CONTENT CONTAINER -->
+
+  <!-- ==========================================================================
+       FOOTER
+       Semantic footer containing navigation links, copyright, and back-to-top
+       ========================================================================== -->
+  <footer id="site-footer" class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo" aria-label="Portfolio Home">
+            <span class="logo-symbol">&lt;</span><span class="logo-text">Dev</span><span
+              class="logo-accent">.Portfolio</span><span class="logo-symbol">/&gt;</span>
+          </a>
+          <p class="footer-tagline">
+            Engineering elegant solutions to complex systems.
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Software Engineer Portfolio. Built with semantic HTML, CSS, and
+          JavaScript.
+        </p>
+
+        <a href="#hero" class="back-to-top" aria-label="Back to top of page">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+  <!-- JavaScript for Night Mode Toggle and Interactivity -->
+  <script src="script.js"></script>
+</body>
+
+</html>
